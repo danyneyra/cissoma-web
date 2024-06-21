@@ -4,41 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <title>Cissoma</title>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div>
-                <a href="">Inicio</a>
-                <a href="">Nosotros</a>
-                <a href="">Ejes Temáticos</a>
-                <a href="">Actividades</a>
-                <a href="">Aliados</a>
-                <a href="">Auspiciadores</a>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <header id="inicio">
+        <nav id="navbar" class="navbar navbar-expand-lg aos-init aos-animate" data-aos="fade-down"
+            data-aos-duration="1500">
+            <div class="container-fluid">
+                <a class="logo" href="#">
+                    <img src="./assets/cissoma-logo.png" alt="">
+                </a>
+                <a href="#">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#ejes">Ejes temáticos</a>
+                <a href="#actividades">Actividades</a>
+                <a href="#aliados">Aliados</a>
+                <a href="#auspiciadores">Auspiciadores</a>
             </div>
-
+            <div class="navbar-mobile">
+                <a class="logo" href="#">
+                    <img src="./assets/cissoma-logo.png" alt="">
+                </a>
+            </div>
+            <div class="gradient-bar"></div>
         </nav>
-        <div class="separator"></div>
+
     </header>
+
     <main>
         <!-- Sección Hero-->
-        <div id="hero">
+        <div id="hero" class="background">
             <section>
-                <div class="section-hero">
-
+                <div class="section-hero aos-init aos-animate" data-aos="zoom-in" data-aos-duration="6000">
+                    <img src="./assets/titulo.png" alt="">
                 </div>
             </section>
         </div>
         <!-- Sección Pacto-->
-        <div id="pacto">
+        <div id="pacto" class="background">
             <section>
-                <div class="section-pacto">
+                <div class="section-pacto aos-init aos-animate" data-aos="zoom-in" data-aos-duration="3000">
+                    <img src="./assets/un-pacto-vida.png" alt="">
 
+                    <div class="contador">
+                        <div class="card-time">
+                            <span>Días</span>
+                            <span>141</span>
+                        </div>
+                        <div class="card-time">
+                            <span>HRS</span>
+                            <span>14</span>
+                        </div>
+                        <div class="card-time">
+                            <span>MIN</span>
+                            <span>13</span>
+                        </div>
+                        <div class="card-time">
+                            <span>SEG</span>
+                            <span>25</span>
+                        </div>
+                        <div class="title-count">CUENTA REGRESIVA</div>
+                    </div>
                 </div>
+                
             </section>
         </div>
         <!-- Sección Reflexionemos -->
@@ -200,6 +238,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
