@@ -1,57 +1,60 @@
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+
 html {
     scroll-behavior: smooth;
+    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* fonts */ 
 
-.merriweather-light {
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .merriweather-regular {
-    font-family: "Merriweather", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .merriweather-bold {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .merriweather-black {
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .merriweather-light-italic {
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .merriweather-regular-italic {
-    font-family: "Merriweather", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .merriweather-bold-italic {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .merriweather-black-italic {
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
 
 body{
     margin: 0 auto;
@@ -95,17 +98,23 @@ header{
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 1em;
+    padding: 1em 2em;
+}
+.navbar .menu{
+  display: flex;
+  gap: 2em;
 }
 .navbar .logo img{
     width: 180px;
 }
 .navbar a{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }
-
+.navbar a:hover{
+  text-decoration: underline;
+}
 .navbar-mobile{
     display: none;
 }
@@ -134,6 +143,7 @@ header{
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    align-items: center;
     padding: 3em;
 }
 .section-pacto img{
@@ -141,11 +151,433 @@ header{
 }
 .section-pacto .contador{
     display: flex;
+    gap: 2em;
+    background-color: #4e6f8b;
+    padding: 1em;
+    border-radius: 20px;
+}
+.section-pacto .contador .card-time{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: 15px;
+    align-items: center;
+}
+.card-time .titulo{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #41424a;
+}
+.card-time .text{
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #41424a;
+    letter-spacing: -0.06em;
+}
+.contador .title-count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 1em;
+    text-align: center;
+    font-size: 35px;
+    color: white;
 }
 
+/* SECTION REFLEXIONEMOS */
+.section-reflexionemos{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3em;
+}
+.section-reflexionemos .titulo-img{
+  display: flex;
+  width: 50%;
+}
+.section-reflexionemos .titulo-img img{
+  width: 90%;
+}
+.section-reflexionemos .parrafos{
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 2em;
+  padding: -2em 1em 1em 6em;
+}
+.section-reflexionemos .parrafos p{
+  width: 420px;
+  line-height: 1.5em;
+  font-size: 20px;
+  word-spacing: 0.5em;
+}
 
+/* SECTION PROGRAMATE */
+.section-programate{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3em;
+}
+.section-programate .titulo-img{
+  display: flex;
+  width: 50%;
+}
+.section-programate .titulo-img img{
+  width: 90%;
+}
+.section-programate .items{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.section-programate .items-1,
+.section-programate .items-2,
+.section-programate .items-3{
+  display: flex;
+}
+
+.section-programate .item img{
+  width: 100%;
+  padding: 1em 2em;
+}
+
+/* SECTION AGENDA */
+.section-agenda{
+  display: flex;
+  width: 100%;
+  padding: 3em;
+}
+.section-agenda .card-agenda{
+  display: flex;
+  padding: 2em 0.5em;
+}
+.section-agenda .card-agenda img{
+  width: 90%;
+}
+
+/* SECTION CONFERENCIAS */
+.section-conferencias{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3em;
+}
+
+.section-conferencias .items{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.section-conferencias .items-1,
+.section-conferencias .items-2{
+  display: flex;
+}
+
+.section-conferencias .card-conferencia{
+  padding: 2em;
+}
+.section-conferencias .card-conferencia img{
+  width: 100%;
+  padding: 1em 2em;
+}
+
+/* SECTION FUNDAODR */
+.section-fundador{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.section-fundador .img-fundador{
+  display: flex;
+  width: 100%;
+}
+.section-fundador .img-fundador img{
+  width: 100%;
+}
+.section-fundador .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em;
+  color: white;
+  width: 400px;
+  gap: 2em;
+}
+.section-fundador .encabezado{
+  display: flex;
+  flex-direction: column;
+}
+.section-fundador .info .parrafo{
+  line-height: 1.5em;
+  font-size: 18px;
+  word-spacing: 0.5em;
+}
+.section-fundador .info .nombre{
+  font-size: 26px;
+  font-weight: 600;
+  color: #b88a31;
+}
+
+/* SECTION PONENTES */
+.section-ponentes{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3em;
+  gap: 4em;
+}
+.section-ponentes .card-ponente{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  gap: 1em;
+  color: white;
+}
+.section-ponentes .card-ponente img{
+  width: 100%;
+  border-radius: 50%;
+  padding: 2em 2em;
+}
+.card-ponente .datos,
+.card-ponente .info{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  word-spacing: 0.5em;
+}
+.card-ponente .datos{
+  text-align: center;
+}
+
+/* SECTION EJES */
+.section-ejes{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3em;
+}
+.section-ejes .titulo-img{
+  display: flex;
+  width: 50%;
+}
+.section-ejes .titulo-img img{
+  width: 90%;
+}
+.section-ejes .contenido{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+.section-ejes .contenido .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+.card-eje{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  width: 320px;
+}
+.card-eje img{
+  width: 50px;
+}
 /* GENERAL */
 .background{
     background: #41424a url('../assets/background-hero.png') no-repeat center center;
     background-size: cover;
+}
+.background-2{
+  background: #41424a url('../assets/bg-actividades.png') no-repeat center center;
+  background-size: cover;
+}
+.background-3{
+  background: #41424a url('../assets/background-presidente.png') no-repeat center center;
+  background-size: cover;
+}
+.background-4{
+  background: #41424a url('../assets/bg-ejes-tematicos.png') no-repeat center center;
+  background-size: cover;
+}
+
+
+@media (max-width: 1024px) {
+  /* HEADER */
+  header .container-fluid{
+    display: none !important;
+  }
+  header .navbar-mobile{
+    display: flex;
+    padding: 1em;
+  }
+  /* SECTION HERO */
+  .section-hero {
+    padding: 2em;
+  }
+  .section-hero img {
+    width: 80%;
+    padding-top: 1em;
+}
+  /* SECTION PACTO */
+  .section-pacto {
+    padding: 2em;
+  }
+  .section-pacto img {
+    width: 70%;
+  }
+  .section-pacto .contador {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* SECTION REFLEXIONEMOS */
+  .section-reflexionemos .titulo-img img {
+    width: 100%;
+  }
+  .section-reflexionemos .titulo-img {
+    width: 70%;
+  }
+  /* SECTION PROGRAMATE */
+  .section-programate .titulo-img img {
+    width: 100%;
+  }
+  .section-programate .titulo-img {
+    width: 70%;
+  }
+  .section-programate .item img {
+    padding: 1em 0.5em;
+  }
+  /* SECTION AGENDA */
+  .section-agenda {
+    padding: 1em;
+  }
+  /* SECTION CONFERENCIAS */
+  .section-conferencias .card-conferencia {
+    padding: 0em;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /* HEADER */
+  header .container-fluid{
+    display: none !important;
+  }
+  header .navbar-mobile{
+    display: flex;
+    padding: 1em;
+  }
+
+  /* SECTION HERO */
+  .section-hero{
+    padding: 2em 0em;
+  }
+  .section-hero img {
+    width: 100%;
+    padding-top: 2em;
+  }
+
+  /* SECTION PACTO */
+  .section-pacto{
+    padding: 1em 1em;
+  }
+  .section-pacto img {
+    width: 70%;
+  }
+  .section-pacto .contador{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+  }
+  .section-pacto .contador .card-time{
+    padding: 1em 1em;
+  }
+  .section-pacto .card-time .titulo{
+    font-size: 20px;
+  }
+  .section-pacto .card-time .text{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .contador .title-count {
+    font-size: 30px;
+  }
+
+  /* SECTION REFLEXIONEMOS */
+  .section-reflexionemos {
+    padding: 1em;
+  }
+  .section-reflexionemos .titulo-img {
+    width: 100%;
+    justify-content: center;
+  }
+  .section-reflexionemos .parrafos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-reflexionemos .parrafos p{
+    width: 100%;
+  }
+
+  /* SECTION PROGRAMATE */
+  .section-programate {
+    padding: 1em;
+  }
+  .section-programate .titulo-img {
+    width: 100%;
+    justify-content: center;
+  }
+  .section-programate .items-1, .section-programate .items-2, .section-programate .items-3 {  
+    flex-direction: column;
+  }
+
+  /* SECTION AGENDA */
+  .section-agenda {
+    flex-direction: column;
+  }
+
+  /* SECTION CONFERENCIAS */
+  .section-conferencias .items-1, .section-conferencias .items-2 {
+    flex-direction: column;
+  }
+  .section-conferencias .card-conferencia {
+    padding: 0em;
+  }
+
+  /* SECTION FUNDADOR */
+  .section-fundador {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-fundador .info {
+    width: 100%;
+    align-items: center;
+  }
+
+  /* SECTION PONENTES */
+  .section-ponentes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* SECTION EJES */
+  .section-ejes {
+    padding: 1em;
+  }
+  .section-ejes .titulo-img {
+    width: 100%;
+    justify-content: center;
+  }
+  .section-ejes .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
 }

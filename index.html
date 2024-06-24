@@ -1,244 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Cissoma - Web</title>
-</head>
+  </head>
 
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <body data-aos-easing="ease" data-aos-duration="1000">
     <header id="inicio">
-        <nav id="navbar" class="navbar navbar-expand-lg aos-init aos-animate" data-aos="fade-down"
-            data-aos-duration="1500">
-            <div class="container-fluid">
-                <a class="logo" href="#">
-                    <img src="./assets/cissoma-logo.png" alt="">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg aos-init aos-animate"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/cissoma-logo.png" alt="" />
                 </a>
+            </div>
+            <div class="menu">
                 <a href="#">Inicio</a>
                 <a href="#nosotros">Nosotros</a>
                 <a href="#ejes">Ejes temáticos</a>
                 <a href="#actividades">Actividades</a>
                 <a href="#aliados">Aliados</a>
-                <a href="#auspiciadores">Auspiciadores</a>
+                <!--<a href="#auspiciadores">Auspiciadores</a>-->
             </div>
-            <div class="navbar-mobile">
-                <a class="logo" href="#">
-                    <img src="./assets/cissoma-logo.png" alt="">
-                </a>
-            </div>
-            <div class="gradient-bar"></div>
-        </nav>
-
+        </div>
+        <div class="navbar-mobile">
+          <a class="logo" href="#">
+            <img src="./assets/cissoma-logo.png" alt="" />
+          </a>
+        </div>
+        <div class="gradient-bar"></div>
+      </nav>
     </header>
 
     <main>
-        <!-- Sección Hero-->
-        <div id="hero" class="background">
-            <section>
-                <div class="section-hero aos-init aos-animate" data-aos="zoom-in" data-aos-duration="6000">
-                    <img src="./assets/titulo.png" alt="">
-                </div>
-            </section>
-        </div>
-        <!-- Sección Pacto-->
-        <div id="pacto" class="background">
-            <section>
-                <div class="section-pacto aos-init aos-animate" data-aos="zoom-in" data-aos-duration="3000">
-                    <img src="./assets/un-pacto-vida.png" alt="">
+      <!-- Sección Hero-->
+      <div id="hero" class="background">
+        <section>
+          <div
+            class="section-hero aos-init aos-animate"
+            data-aos="zoom-in"
+            data-aos-duration="6000"
+          >
+            <img src="./assets/titulo.png" alt="" />
+          </div>
+        </section>
+      </div>
+      <!-- Sección Pacto-->
+      <div id="pacto" class="background">
+        <section>
+          <div
+            class="section-pacto aos-init aos-animate"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+          >
+            <img src="./assets/un-pacto-vida.png" alt="" />
 
-                    <div class="contador">
-                        <div class="card-time">
-                            <span>Días</span>
-                            <span>141</span>
-                        </div>
-                        <div class="card-time">
-                            <span>HRS</span>
-                            <span>14</span>
-                        </div>
-                        <div class="card-time">
-                            <span>MIN</span>
-                            <span>13</span>
-                        </div>
-                        <div class="card-time">
-                            <span>SEG</span>
-                            <span>25</span>
-                        </div>
-                        <div class="title-count">CUENTA REGRESIVA</div>
-                    </div>
+            <div class="contador">
+              <div class="card-time">
+                <span class="titulo">Días</span>
+                <span id="dias" class="text">141</span>
+              </div>
+              <div class="card-time">
+                <span class="titulo">HRS</span>
+                <span id="horas" class="text">14</span>
+              </div>
+              <div class="card-time">
+                <span class="titulo">MIN</span>
+                <span id="minutos" class="text">13</span>
+              </div>
+              <div class="card-time">
+                <span class="titulo">SEG</span>
+                <span id="segundos" class="text">25</span>
+              </div>
+              <div class="title-count">
+                <p>CUENTA</p>
+                <p>REGRESIVA</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Sección Reflexionemos -->
+      <div id="reflexionemos" class="background">
+        <section>
+          <div class="section-reflexionemos">
+            <div
+              class="titulo-img aos-init aos-animate"
+              data-aos="zoom-in"
+              data-aos-duration="4000"
+            >
+              <img src="./assets/reflexionemos.png" alt="" />
+            </div>
+            <div class="parrafos">
+              <p
+                class="aos-init aos-animate"
+                data-aos="fade-right"
+                data-aos-duration="3500"
+              >
+                Tras un rotundo éxito en nuestra primera y segunda edición, la
+                empresa <strong>Ceniteg Solutions S.A.C.</strong> organiza el
+                3er Congreso Internacional de Calidad, Innovación, Seguridad,
+                Salud Ocupacional y Medio Ambiente (III CISSOMA). Cuyo objetivo
+                fundamental es promover una cultura preventiva dentro de los
+                cuatro ejes principales; esto se desarrolla con fundamento en el
+                desempeño académico, tecnológico, empresarial, de investigación
+                e innovación.
+              </p>
+              <p
+                class="aos-init aos-animate"
+                data-aos="fade-left"
+                data-aos-duration="3500"
+              >
+                El CISSOMA se organiza partiendo de la necesidad de realizar
+                <strong>un pacto trasnacional por la vida</strong> , congregando
+                a gestores y protagonistas e incitando a la acción frente a una
+                problemática desarrollada a partir de los diferentes ejes
+                temáticos propuestos. La organización fomenta un plan de
+                integración global a fin de que los diversos actores converjan
+                en la búsqueda de soluciones y se determinen planes de acción.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Sección Agenda -->
+      <div id="programate" class="background">
+        <section>
+          <div class="section-programate">
+            <div
+              class="titulo-img aos-init aos-animate"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <img src="./assets/programate.png" alt="" />
+            </div>
+            <div class="items">
+              <div class="items-1">
+                <div
+                  class="item"
+                  data-aos="zoom-in-right"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-01.png" alt="" />
                 </div>
-                
-            </section>
-        </div>
-        <!-- Sección Reflexionemos -->
-        <div id="reflexionemos">
-            <section>
-                <div class="section-reflexionemos">
-                    <div></div>
-                    <div></div>
+                <div
+                  class="item"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-02.png" alt="" />
                 </div>
-            </section>
-        </div>
-        <!-- Sección Agenda -->
-        <div id="programate">
-            <section>
-                <div class="section-programate">
-                    <div class="items">
-                        <div class="items-1">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                        </div>
-                        <div class="items-2">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                        </div>
-                        <div class="items-3">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                        </div>
-                    </div>
+                <div
+                  class="item"
+                  data-aos="zoom-in-left"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-03.png" alt="" />
                 </div>
-            </section>
-        </div>
-        <!--Sección Agenda-->
-        <div id="agenda">
-            <section>
-                <div class="section-agenda">
-                    <div class="card-agenda"></div>
-                    <div class="card-agenda"></div>
-                    <div class="card-agenda"></div>
+              </div>
+              <div class="items-2">
+                <div
+                  class="item aos-init aos-animate"
+                  data-aos="zoom-in-right"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-04.png" alt="" />
                 </div>
-            </section>
-        </div>
-        <div id="conferencias">
-            <section>
-                <div class="section-conferencias">
-                    <div class="items">
-                        <div class="item-1">
-                            <div class="card-conferencia">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-conferencia">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-conferencia">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-                        <div class="items-2">
-                            <div class="card-conferencia">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-conferencia">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-conferencia">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <div
+                  class="item aos-init aos-animate"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-05.png" alt="" />
                 </div>
-            </section>
-        </div>
-        <!-- Sección Fundador-->
-        <div id="fundador">
-            <section>
-                <div class="section-fundador">
-                    <div class="img-fundador"></div>
-                    <div class="info"></div>
+                <div
+                  class="item aos-init aos-animate"
+                  data-aos="zoom-in-left"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-06.png" alt="" />
                 </div>
-            </section>
-        </div>
-        <!-- Sección Ponentes-->
-        <div id="ponentes">
-            <section>
-                <div class="section-ponentes">
-                    <div class="card-ponente">
-                        <div class="foto"></div>
-                        <div class="datos"></div>
-                        <div class="info"></div>
-                    </div>
-                    <div class="card-ponente">
-                        <div class="foto"></div>
-                        <div class="datos"></div>
-                        <div class="info"></div>
-                    </div>
+              </div>
+              <div class="items-3">
+                <div
+                  class="item aos-init aos-animate"
+                  data-aos="zoom-in-right"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-07.png" alt="" />
                 </div>
-            </section>
-        </div>
+                <div
+                  class="item aos-init aos-animate"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-08.png" alt="" />
+                </div>
+                <div
+                  class="item aos-init aos-animate"
+                  data-aos="zoom-in-left"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/programate-09.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--Sección Agenda-->
+      <div id="agenda" class="background">
+        <section>
+          <div class="section-agenda">
+            <div
+              class="card-agenda aos-init aos-animate"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="./assets/agenda-01.png" alt="" />
+            </div>
+            <div
+              class="card-agenda aos-init aos-animate"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="./assets/agenda-02.png" alt="" />
+            </div>
+            <div
+              class="card-agenda aos-init aos-animate"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="./assets/agenda-03.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="conferencias" class="background-2">
+        <section>
+          <div class="section-conferencias">
+            <div class="items">
+              <div class="items-1">
+                <div
+                  class="card-conferencia aos-init aos-animate"
+                  data-aos="zoom-in-right"
+                  data-aos-duration="1000"
+                >
+                  <img src="./assets/actividades-01.png" alt="" />
+                </div>
+                <div
+                  class="card-conferencia aos-init aos-animate"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                >
+                  <img src="./assets/actividades-02.png" alt="" />
+                </div>
+                <div
+                  class="card-conferencia aos-init aos-animate"
+                  data-aos="zoom-in-left"
+                  data-aos-duration="1000"
+                >
+                  <img src="./assets/actividades-03.png" alt="" />
+                </div>
+              </div>
+              <div class="items-2">
+                <div
+                  class="card-conferencia aos-init aos-animate"
+                  data-aos="zoom-in-right"
+                  data-aos-duration="1000"
+                >
+                  <img src="./assets/actividades-04.png" alt="" />
+                </div>
+                <div
+                  class="card-conferencia aos-init aos-animate"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                >
+                  <img src="./assets/actividades-05.png" alt="" />
+                </div>
+                <div
+                  class="card-conferencia aos-init aos-animate"
+                  data-aos="zoom-in-left"
+                  data-aos-duration="1000"
+                >
+                  <img src="./assets/actividades-06.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Sección Fundador-->
+      <div id="fundador" class="background-3">
+        <section>
+          <div class="section-fundador">
+            <div
+              class="img-fundador"
+            >
+              <img src="./assets/ing-jose-luis.png" alt="" />
+            </div>
+            <div class="info">
+              <div class="encabezado">
+                <span class="nombre">Ing. José L. Ballón</span>
+                <span class="cargo">PRESIDENTE FUNDADOR</span>
+              </div>
+              <div
+                class="parrafo aos-init aos-animate"
+                data-aos="fade-left"
+              >
+                <p>
+                  Ingeniero de minas. Gerente general de Ceniteg Solutions SAC,
+                  presidente fundador del CONAPERVOL y CISSOMA; es presidente de
+                  la Fundación Luis Valle Goicochea, fue presidente del Capítulo
+                  de Ingeniería de Minas y Geológica del Colegio de Ingenieros
+                  del Perú - La Libertad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Sección Ponentes-->
+      <div id="ponentes" class="background">
+        <section>
+          <div class="section-ponentes">
+            <div class="card-ponente aos-init aos-animate" data-aos="fade-right">
+              <div class="foto">
+                <img src="./assets/ing-javier-neira.png" alt="">
+              </div>
+              <div class="datos">
+                <h3>Ing. Javier Neira</h3>
+                <span>PRESIDENTE</span>
+              </div>
+              <div class="info">
+                <p>Ingeniero Metalurgista. Experiencia
+                    en el sector minero como Jefe de
+                    Seguridad y Salud Ocupacional.
+                    Aplicación de liderazgo y Coaching
+                    en la gestión integral reforzando la
+                    cultura de Seguridad a todo nivel.
+                    Gestor en el programa de Seguridad
+                    Basado en el comportamiento de
+                    gestión de prevención de riesgos.</p>
+              </div>
+            </div>
+            <div class="card-ponente aos-init aos-animate" data-aos="fade-left">
+              <div class="foto">
+                <img src="./assets/ing-geice-copede.png" alt="">
+              </div>
+              <div class="datos">
+                <h3>Ing. Gleice Copede</h3>
+                <span>VICEPRESIDENTE</span>
+              </div>
+              <div class="info">
+                <p>Consultor ASG. Ingeniera química.
+                    Ingeniero en Seguridad del Trabajo.
+                    Higienista Ocupacional. Trabaja en
+                    consultoría de empresas y es
+                    EXPERTA TRIBUNAL del TJMS -
+                    Tribunal de Justicia de Mato Grosso
+                    do Sul. Experiencia en el área de
+                    Ingeniería de Producción, con
+                    énfasis en Ingeniería de Producción.
+                    </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-        <!--Ejes Temáticos-->
-        <div id="ejes">
-            <section>
-                <div class="ejes-tematicos">
-                    <div class="titulo"></div>
-                    <div class="ejes">
-                        <div>
-                            <div class="card-eje">
-                                <img src="" alt="">
-                                <h3></h3>
-                            </div>
-                            <div class="card-eje">
-                                <img src="" alt="">
-                                <h3></h3>
-                            </div>
-                            <div class="card-eje">
-                                <img src="" alt="">
-                                <h3></h3>
-                            </div>
-                            <div class="card-eje">
-                                <img src="" alt="">
-                                <h3></h3>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card-eje">
-                                <img src="" alt="">
-                                <h3></h3>
-                            </div>
-                            <div class="card-eje">
-                                <img src="" alt="">
-                                <h3></h3>
-                            </div>
-                            <div class="card-eje">
-                                <img src="" alt="">
-                                <h3></h3>
-                            </div>
-                            <div class="card-eje">
-                                <img src="" alt="">
-                                <h3></h3>
-                            </div>
-                        </div>
-                    </div>
+      <!--Ejes Temáticos-->
+      <div id="ejes" class="background-4">
+        <section>
+          <div class="section-ejes">
+            <div class="titulo-img aos-init aos-animate"
+                data-aos="zoom-in"
+                data-aos-duration="4000">
+                <img src="./assets/ejes-tematicos.png" alt="">
+            </div>
+            <div class="contenido">
+              <div class="item aos-init aos-animate" data-aos="fade-right">
+                <div class="card-eje">
+                  <img src="./assets/ejes-check.png" alt="" />
+                  <h1>SEGURIDAD
+                    EN EL TRABAJO</h1>
                 </div>
-            </section>
-        </div>
+                <div class="card-eje">
+                  <img src="./assets/ejes-check.png" alt="" />
+                  <h1>AMBIENTE</h1>
+                </div>
+                <div class="card-eje">
+                  <img src="./assets/ejes-check.png" alt="" />
+                  <h1>LÍDERES
+                    EN PREVENCIÓN</h1>
+                </div>
+                <div class="card-eje">
+                  <img src="./assets/ejes-check.png" alt="" />
+                  <h1>INNOVACIÓN
+                    EN SSOMAC</h1>
+                </div>
+              </div>
+              <div class="item aos-init aos-animate" data-aos="fade-left">
+                <div class="card-eje">
+                  <img src="./assets/ejes-check.png" alt="" />
+                  <h1>SALUD
+                    OCUPACIONAL</h1>
+                </div>
+                <div class="card-eje">
+                  <img src="./assets/ejes-check.png" alt="" />
+                  <h1>CALIDAD</h1>
+                </div>
+                <div class="card-eje">
+                  <img src="./assets/ejes-check.png" alt="" />
+                  <h1>REALIDAD NACIONAL
+                    DE LA SST EN PERÚ</h1>
+                </div>
+                <div class="card-eje">
+                  <img src="./assets/ejes-check.png" alt="" />
+                  <h1>INVESTIGACIÓN
+                    EN SSOMAC</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
-        <div>
-            <div class="politica"></div>
-            <div class="trabaja"></div>
-            <div class="nav"></div>
-            <div class="sociales"></div>
-        </div>
+      <div>
+        <div class="politica"></div>
+        <div class="trabaja"></div>
+        <div class="nav"></div>
+        <div class="sociales"></div>
+      </div>
     </footer>
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>
