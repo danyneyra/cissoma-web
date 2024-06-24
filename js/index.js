@@ -1,4 +1,11 @@
+
 document.addEventListener('DOMContentLoaded', function() {
+  
+  // Fuerza la recalculación de las posiciones
+  setTimeout(function() {
+    AOS.refreshHard();
+  }, 100);
+
     // Fecha del evento en formato dd/mm/aaaa
     const eventoFecha = '25/12/2024';
   
