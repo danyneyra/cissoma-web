@@ -645,9 +645,10 @@ footer .sociales .item img{
   /* SECTION FUNDADOR */
   .section-fundador {
     grid-template-columns: repeat(1, 1fr);
+    width: auto;
   }
   .section-fundador .info {
-    width: 100%;
+    width: auto;
     align-items: center;
   }
 
