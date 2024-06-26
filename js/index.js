@@ -50,5 +50,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Actualizar el contador cada segundo
     const intervalo = setInterval(actualizarContador, 1000);
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+    
   });
   
