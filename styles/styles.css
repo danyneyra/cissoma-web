@@ -543,7 +543,7 @@ footer .sociales .item img{
   display: flex;
   margin-top: 1em;
   gap: 1em;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
   overflow: hidden;
   max-height: 0;
   background-color: #41424a;
@@ -558,14 +558,9 @@ footer .sociales .item img{
   text-decoration: none;
   font-size: 18px;
 }
-.nav-links a:hover{
-  text-decoration: none;
-  font-size: 22px;
-}
 
 .nav-links.active {
   max-height: 300px;
-  padding-top: 1em;
 }
 
 
