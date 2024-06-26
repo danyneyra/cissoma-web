@@ -100,7 +100,7 @@ header{
 }
 .navbar .menu{
   display: flex;
-  gap: 2em;
+  gap: 3em;
 }
 .navbar .logo img{
     width: 180px;
@@ -109,9 +109,11 @@ header{
     font-size: 20px;
     color: white;
     text-decoration: none;
+    padding: 0.5em;
 }
 .navbar a:hover{
-  text-decoration: underline;
+  background-color: white;
+  color: #41424a;
 }
 .navbar-mobile{
     display: none;
@@ -557,6 +559,10 @@ footer .sociales .item img{
   color: white;
   text-decoration: none;
   font-size: 18px;
+}
+
+.nav-links a:hover{
+  text-decoration: none;
 }
 
 .nav-links.active {
