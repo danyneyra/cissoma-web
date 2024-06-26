@@ -206,7 +206,7 @@ header{
   justify-content: center;
   color: white;
   gap: 2em;
-  padding: -2em 1em 1em 6em;
+  overflow: hidden;
 }
 .section-reflexionemos .parrafos p{
   width: 420px;
