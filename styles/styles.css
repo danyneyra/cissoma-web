@@ -48,17 +48,15 @@
   
 
 
-html {
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* fonts */ 
-
-
-body{
     margin: 0 auto;
+    padding: 0;
+    width: 100%;
     background-color:#41424a !important;
+    box-sizing: border-box; 
 }
 
 * {
@@ -496,6 +494,35 @@ footer .sociales .item img{
 .background-4{
   background: #41424a url('../assets/bg-ejes-tematicos.png') no-repeat center center;
   background-size: cover;
+}
+
+/* FLOTANTE */
+
+ /* Estilo del botón de WhatsApp */
+ .whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  color: white;
+  border-radius: 50% 0% 0% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
 }
 
 
