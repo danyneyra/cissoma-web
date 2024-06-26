@@ -391,6 +391,95 @@ header{
 .card-eje img{
   width: 50px;
 }
+
+/* SECTION FOOTER */
+footer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #41424a;
+  color: #f4f4f4;
+  padding: 2em;
+  gap: 1em;
+}
+footer p{
+  font-size: 14px;
+}
+footer img{
+  width: 100%;
+}
+
+footer .politica{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+footer .politica img{
+  width: 200px;
+}
+
+footer .politica .redes{
+  display: flex;
+  gap: 1em;
+}
+footer .politica .redes img{
+  width: 40px;
+}
+footer .politica .organizado{
+  width: 100px;
+}
+
+footer .trabaja{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  text-align: center;
+}
+
+footer .trabaja span{
+  font-weight: 600;
+}
+
+footer .trabaja .item{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+footer .trabaja input{
+  background-color: #bdbdbd;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+footer nav{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-left: 2em;
+}
+footer nav a{
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 18px;
+}
+
+footer .sociales{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer .sociales .item{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+footer .sociales .item img{
+  width: 30px;
+}
 /* GENERAL */
 .background{
     background: #41424a url('../assets/background-hero.png') no-repeat center center;
@@ -578,6 +667,25 @@ header{
   }
   .section-ejes .contenido {
     flex-direction: column;
+    align-items: center;
+  }
+
+  /* SECTION FOOTER */
+  footer{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 2em;
+  }
+
+  footer .politica .redes {
+    justify-content: center;
+  }
+
+  footer nav {
+    padding-left: 0em;
+    align-items: center;
+  }
+  footer .politica {
     align-items: center;
   }
 }

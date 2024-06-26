@@ -24,6 +24,7 @@
   <body>
     <header id="inicio">
       <nav
+        aria-label="navbar"
         id="navbar"
         class="navbar navbar-expand-lg"
         data-aos="fade-down"
@@ -40,8 +41,6 @@
                 <a href="#nosotros">Nosotros</a>
                 <a href="#ejes">Ejes temáticos</a>
                 <a href="#actividades">Actividades</a>
-                <a href="#aliados">Aliados</a>
-                <!--<a href="#auspiciadores">Auspiciadores</a>-->
             </div>
         </div>
         <div class="navbar-mobile">
@@ -60,7 +59,7 @@
           <div
             class="section-hero"
             data-aos="zoom-in"
-            data-aos-duration="6000"
+            data-aos-duration="4000"
           >
             <img src="./assets/titulo.png" alt="" />
           </div>
@@ -142,7 +141,7 @@
           </div>
         </section>
       </div>
-      <!-- Sección Agenda -->
+      <!-- Sección Programate -->
       <div id="programate" class="background">
         <section>
           <div class="section-programate">
@@ -188,14 +187,14 @@
                 <div
                   class="item"
                   data-aos="zoom-in-up"
-                  data-aos-duration="1500"
+                  data-aos-duration="1000"
                 >
                   <img src="./assets/programate-05.png" alt="" />
                 </div>
                 <div
                   class="item"
                   data-aos="zoom-in-left"
-                  data-aos-duration="1500"
+                  data-aos-duration="1000"
                 >
                   <img src="./assets/programate-06.png" alt="" />
                 </div>
@@ -204,21 +203,21 @@
                 <div
                   class="item"
                   data-aos="zoom-in-right"
-                  data-aos-duration="1500"
+                  data-aos-duration="1000"
                 >
                   <img src="./assets/programate-07.png" alt="" />
                 </div>
                 <div
                   class="item"
                   data-aos="zoom-in-up"
-                  data-aos-duration="1500"
+                  data-aos-duration="1000"
                 >
                   <img src="./assets/programate-08.png" alt="" />
                 </div>
                 <div
                   class="item"
                   data-aos="zoom-in-left"
-                  data-aos-duration="1500"
+                  data-aos-duration="1000"
                 >
                   <img src="./assets/programate-09.png" alt="" />
                 </div>
@@ -228,7 +227,7 @@
         </section>
       </div>
       <!--Sección Agenda-->
-      <div id="agenda" class="background">
+      <div id="actividades" class="background">
         <section>
           <div class="section-agenda">
             <div
@@ -310,7 +309,7 @@
         </section>
       </div>
       <!-- Sección Fundador-->
-      <div id="fundador" class="background-3">
+      <div id="nosotros" class="background-3">
         <section>
           <div class="section-fundador">
             <div
@@ -446,18 +445,61 @@
       </div>
     </main>
     <footer>
-      <div>
-        <div class="politica"></div>
-        <div class="trabaja"></div>
-        <div class="nav"></div>
-        <div class="sociales"></div>
-      </div>
+        <div class="politica">
+          <img src="./assets/cissoma-logo.png" alt="">
+          <p>Todos los derechos reservados © CISSOMA 2024</p>
+          <p>Un evento organizado por <img class="organizado" src="./assets/ceniteg-logo.png" alt=""></p>
+          <p>Síguenos en:</p>
+            <div class="redes">
+              <img src="./assets/logo-instagram-white.png" alt="">
+              <img src="./assets/logo-facebook-white.png" alt="">
+              <img src="./assets/logo-linkedin-white.png" alt="">
+              <img src="./assets/logo-youtube-white.png" alt="">
+            </div>
+        </div>
+        <div class="trabaja">
+          <div class="item">
+            <span>¿Tienes un proyecto?</span>
+            <p>Inspira con tu visión y transforma el mundo</p>
+            <p>Ingresa tu correo electrónico</p>
+            <input type="email">
+          </div>
+          <div class="item">
+            <span>¡Trabaja con Nosotro!</span>
+            <p>Postula a nuestra bolsa de trabajo</p>
+            <p>info@ceniteg.com</p>
+          </div>
+        </div>
+        <div class="nav">
+          <nav
+            aria-label="navbar"
+          >
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#actividades">Actividades</a>
+            <a href="#ejes">Ejes Temáticos</a>
+          </nav>
+        </div>
+        <div class="sociales">
+          <div class="item">
+            <img src="./assets/icon-whatsapp.png" alt="">
+            <p>+51 943 542 437 / +51 44 372588</p>
+          </div>
+          <div class="item">
+            <img src="./assets/icon-map.png" alt="">
+            <p>Marcelo Corne, 279.Urb. SanAndrés
+              Trujillo, Perú</p>
+          </div>
+          <div class="item">
+            <img src="/assets/icon-mail.png" alt="">
+            <p>info@ceniteg.com</p>
+          </div>
+        </div>
     </footer>
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init()
-    </script>
     </script>
     <script src="./js/index.js"></script>
   </body>
