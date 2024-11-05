@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 100);
 
     // Fecha del evento en formato dd/mm/aaaa
-    const eventoFecha = '07/11/2024';
+    const eventoFecha = '22/11/2024';
   
     // Función para convertir la fecha en un objeto Date
     function convertirFecha(fecha) {
