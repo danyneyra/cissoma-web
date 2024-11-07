@@ -225,6 +225,7 @@ header{
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 2em;
     padding: 3em;
 }
 .section-pacto img{
@@ -232,16 +233,15 @@ header{
 }
 .section-pacto .contador{
     display: flex;
-    gap: 2em;
-    padding: 1em;
-    border-radius: 20px;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 .section-pacto .contador .card-time{
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 1em 2em;
-    border-radius: 15px;
+    padding: 1em 1.5em;
+    border-radius: 30px;
     align-items: center;
 }
 .card-time .titulo{
@@ -334,13 +334,17 @@ header{
 }
 .section-agenda .card-agenda{
   display: flex;
+  justify-content: center;
   padding: 2em 0.5em;
+  
 }
 .section-agenda .card-agenda img{
   width: 70%;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
-.section-agenda .card-agenda:hover img {
-  transform: scale(1.05); /* Gira y amplía ligeramente la imagen */
+.card-agenda:hover img{
+  transform: translateY(-20px);
+  filter: none;
 }
 
 /* SECTION CONFERENCIAS */
@@ -477,6 +481,28 @@ header{
   width: 50px;
 }
 
+/* SECTION ALIADOS */
+.section-aliados{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2em;
+  background-color: white;
+}
+.section-aliados .titulo-img img{
+  width: 40%;
+}
+.section-aliados .container {
+  padding:  2em 0em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
+.section-aliados img {
+  border-radius: 40px;
+  width: 250px;
+}
 /* SECTION FOOTER */
 footer{
   display: grid;
