@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -18,7 +19,38 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Cissoma - Web</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TRH9DSCN");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0NB74MWENJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0NB74MWENJ");
+    </script>
+    <title>
+      III CISSOMA - Congreso Internacional de Calidad, Innovación, Seguridad,
+      Salud Ocupacional y Medio Ambiente
+    </title>
   </head>
 
   <body>
@@ -56,10 +88,9 @@
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#ejes">Ejes temáticos</a></li>
             <li><a href="#actividades">Actividades</a></li>
-            <div class="gradient-bar"></div>
           </ul>
         </div>
-        <div class="gradient-bar"></div>
+        
       </nav>
     </header>
 
@@ -73,6 +104,12 @@
             data-aos-duration="2000"
           >
             <img src="./assets/titulo.png" alt="" />
+          </div>
+          <div 
+            class="register"
+            data-aos="fade-down"
+            data-aos-duration="1500">
+            <a href="https://cissoma.com/inscripcion/" class="gradient-button">Registrarse</a>
           </div>
         </section>
       </div>
@@ -156,7 +193,7 @@
       </div>
       <!-- Sección Programate -->
       <div id="programate" class="background">
-        <section>
+        <section></section>
           <div class="section-programate">
             <div
               class="titulo-img"
@@ -165,7 +202,7 @@
             >
               <img src="./assets/programate.png" alt="" />
             </div>
-            <div class="items">
+            <div class="items background-programate">
               <div class="items-1">
                 <div
                   class="item"
@@ -197,20 +234,6 @@
                 >
                   <img src="./assets/programate-04.png" alt="" />
                 </div>
-                <!-- <div
-                  class="item"
-                  data-aos="zoom-in-up"
-                  data-aos-duration="1000"
-                >
-                  <img src="./assets/programate-05.png" alt="" />
-                </div>
-                <div
-                  class="item"
-                  data-aos="zoom-in-left"
-                  data-aos-duration="1000"
-                >
-                  <img src="./assets/programate-06.png" alt="" />
-                </div> -->
                 <div
                   class="item"
                   data-aos="zoom-in-right"
@@ -228,13 +251,6 @@
       <div id="actividades" class="background">
         <section>
           <div class="section-agenda">
-            <!-- <div
-              class="card-agenda"
-              data-aos="zoom-in-up"
-              data-aos-duration="1000"
-            >
-              <img src="./assets/agenda-01.png" alt="" />
-            </div> -->
             <div
               class="card-agenda"
               data-aos="zoom-in-up"
@@ -450,6 +466,8 @@
       </a>
     </div>
 
+    <div class="gradient-bar"></div>
+
     <footer>
         <div class="politica">
           <img src="./assets/cissoma-logo.png" alt="">
@@ -468,21 +486,6 @@
             <p>Inspira con tu visión y transforma el mundo</p>
             <p>informe.cissoma@gmail.com</p>
           </div>
-          <!-- <div class="item">
-            <span>¡Trabaja con Nosotro!</span>
-            <p>Postula a nuestra bolsa de trabajo</p>
-            <p>info@ceniteg.com</p>
-          </div> -->
-        </div>
-        <div class="nav">
-          <nav
-            aria-label="navbar"
-          >
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#actividades">Actividades</a>
-            <a href="#ejes">Ejes Temáticos</a>
-          </nav>
         </div>
         <div class="sociales">
           <div class="item">
