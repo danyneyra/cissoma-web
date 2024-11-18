@@ -493,7 +493,8 @@ header{
 }
 
 /* SECTION ALIADOS */
-.section-aliados{
+.section-aliados,
+.section-auspiciadores{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -504,18 +505,24 @@ header{
   padding-top: 1em;
   width: 50%;
 }
-.section-aliados .container {
+.section-aliados .container,
+.section-auspiciadores .container{
   padding:  2em 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3em;
 }
-.section-aliados img {
+.section-aliados img,
+.section-auspiciadores img{
   border-radius: 40px;
   width: 250px;
 }
-
+/* SECTION AUSPICIADORES */
+.section-auspiciadores .titulo-img img{
+  padding-top: 1em;
+  width: 60%;
+}
 /* SECTION AUTORES */
 .section-autores{
   display: flex;
@@ -527,7 +534,7 @@ header{
 }
 .section-autores .titulo-img img{
   padding-top: 1em;
-  width: 60%;
+  width: 50%;
 }
 
 
@@ -815,7 +822,7 @@ footer .sociales .item img{
   /* SECTION PONENTES */
   .section-ponentes .titulo-img img{
     padding-top: 1em;
-    width: 40%;
+    width: 30%;
   }
 
   /* SECTION REFLEXIONEMOS */
@@ -845,6 +852,11 @@ footer .sociales .item img{
   .section-aliados .titulo-img img{
     padding-top: 1em;
     width: 25%;
+  }
+  /* SECTION AUSPICIADORES */
+  .section-auspiciadores .titulo-img img{
+    padding-top: 1em;
+    width: 40%;
   }
   /*SECTION AUTORES */
   .section-autores .titulo-img img{
@@ -1037,6 +1049,12 @@ footer .sociales .item img{
 
   /* SECTION ALIADOS */
   .section-aliados .titulo-img img{
+    padding-top: 1em;
+    width: 90%;
+  }
+
+  /* SECTION AUSPICIADORES */
+  .section-auspiciadores .titulo-img img{
     padding-top: 1em;
     width: 90%;
   }
