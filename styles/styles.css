@@ -796,6 +796,7 @@ footer .sociales .item img{
   .slideshow-container{
     height: 70vh;
   }
+  
 }
 
 @media (min-width: 1281px) {
@@ -1009,7 +1010,11 @@ footer .sociales .item img{
   /* SECTION PONENTES */
   .section-ponentes .titulo-img img{
     padding-top: 1em;
-    width: 90%;
+    width: 100%;
+  }
+  .fundadores{
+    display: flex;
+    flex-direction: column;
   }
 
   .section-ponentes {
