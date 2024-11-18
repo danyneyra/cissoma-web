@@ -1,6 +1,29 @@
+let slideIndex = 0;
+  const carousel = document.getElementById('carousel');
+  const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
+
+  /* Mover el carrusel */
+  function moveSlide(direction) {
+    slideIndex = (slideIndex + direction + totalItems) % totalItems;
+    const offset = -slideIndex * items[0].clientWidth;
+    carousel.style.transform = `translateX(${offset}px)`;
+  }
+
+  /* Ajustar el índice en resize */
+  window.addEventListener('resize', () => {
+    const offset = -slideIndex * items[0].clientWidth;
+    carousel.style.transform = `translateX(${offset}px)`;
+  });
+
+  
+
 
 document.addEventListener('DOMContentLoaded', function() {
   
+  /* Cambio automático (opcional) */
+  setInterval(() => moveSlide(1), 5000);
+
   // Fuerza la recalculación de las posiciones
   setTimeout(function() {
     AOS.refreshHard();

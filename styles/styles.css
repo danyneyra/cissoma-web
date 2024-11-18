@@ -413,10 +413,21 @@ header{
 /* SECTION PONENTES */
 .section-ponentes{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: 100%;
   padding: 3em;
+
+}
+.section-ponentes .fundadores{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: start;
   gap: 4em;
+}
+.section-ponentes .titulo-img img{
+  padding-top: 1em;
+  width: 60%;
 }
 .section-ponentes .card-ponente{
   display: flex;
@@ -504,6 +515,22 @@ header{
   border-radius: 40px;
   width: 250px;
 }
+
+/* SECTION AUTORES */
+.section-autores{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background-color: white;
+}
+.section-autores .titulo-img img{
+  padding-top: 1em;
+  width: 60%;
+}
+
+
 /* SECTION FOOTER */
 footer{
   display: grid;
@@ -684,6 +711,93 @@ footer .sociales .item img{
   max-height: 300px;
 }
 
+/*SECTION SLIDE SHOW */
+/* Contenedor principal */
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Contenedor del carrusel */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* Estilo de las imágenes */
+.carousel-item {
+  min-width: 33.33%; /* Tres imágenes en pantallas grandes */
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones de navegación */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Indicadores (opcional) */
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carousel-item {
+    min-width: 100%; /* Una imagen por diapositiva en móviles */
+  }
+  .slideshow-container{
+    height: 70vh;
+  }
+}
+
 @media (min-width: 1281px) {
   /* SECTION HERO */
 
@@ -695,6 +809,12 @@ footer .sociales .item img{
 
   .section-pacto img {
     width: 30%;
+  }
+
+  /* SECTION PONENTES */
+  .section-ponentes .titulo-img img{
+    padding-top: 1em;
+    width: 40%;
   }
 
   /* SECTION REFLEXIONEMOS */
@@ -724,6 +844,11 @@ footer .sociales .item img{
   .section-aliados .titulo-img img{
     padding-top: 1em;
     width: 25%;
+  }
+  /*SECTION AUTORES */
+  .section-autores .titulo-img img{
+    padding-top: 1em;
+    width: 30%;
   }
 }
 @media (max-width: 1024px) {
@@ -882,6 +1007,11 @@ footer .sociales .item img{
   }
 
   /* SECTION PONENTES */
+  .section-ponentes .titulo-img img{
+    padding-top: 1em;
+    width: 90%;
+  }
+
   .section-ponentes {
     flex-direction: column;
     align-items: center;
@@ -902,6 +1032,12 @@ footer .sociales .item img{
 
   /* SECTION ALIADOS */
   .section-aliados .titulo-img img{
+    padding-top: 1em;
+    width: 90%;
+  }
+
+  /* SECTION AUTORES */
+  .section-autores .titulo-img img{
     padding-top: 1em;
     width: 90%;
   }
